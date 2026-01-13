@@ -1,0 +1,112 @@
+/* フォント読み込み */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  --mc-gray: #C6C6C6;
+  --mc-dark: #373737;
+  --mc-green: #568430;
+}
+
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #181818;
+  color: white;
+  overflow: hidden;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  /* 背景画像（マイクラ風） */
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+              url('https://www.minecraft.net/content/dam/games/minecraft/key-art/Games_Subnav_Minecraft-300x465.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  color: #fbbf24;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 50px;
+  text-shadow: 4px 4px 0px #000;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.chest {
+  font-size: 8rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+  filter: drop-shadow(0 10px 10px rgba(0,0,0,0.5));
+}
+
+.chest:hover { transform: scale(1.1); }
+
+/* マイクラ風パネル */
+.mc-panel {
+  background-color: var(--mc-gray);
+  border: 4px solid;
+  border-color: #fff var(--mc-dark) var(--mc-dark) #fff;
+  padding: 20px;
+  margin-top: 30px;
+  width: 90%;
+  max-width: 400px;
+  color: #3f3f3f;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.code-box {
+  background: rgba(0,0,0,0.1);
+  border: 2px solid;
+  border-color: var(--mc-dark) #fff #fff var(--mc-dark);
+  padding: 15px;
+  margin: 15px 0;
+  text-align: center;
+  word-break: break-all;
+  font-size: 1rem;
+}
+
+/* マイクラ風ボタン */
+.mc-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 3px solid;
+  border-color: #fff var(--mc-dark) var(--mc-dark) #fff;
+  background-color: var(--mc-gray);
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.7rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: #3f3f3f;
+}
+
+.mc-button:active {
+  border-color: var(--mc-dark) #fff #fff var(--mc-dark);
+  background-color: #aaa;
+}
+
+.mc-button-green {
+  background-color: var(--mc-green);
+  color: white;
+  border-color: #85B664 #1F3E12 #1F3E12 #85B664;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
