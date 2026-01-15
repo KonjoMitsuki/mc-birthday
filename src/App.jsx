@@ -7,7 +7,7 @@ function App() {
   const [copied, setCopied] = useState(false);
 
   // ★情報を変更してください
-  const FRIEND_NAME = "My Friend";
+  const FRIEND_NAME = "SO";
   const MINECRAFT_CODE = "ABCD-EFGH-IJKL-MNOP";
 
   const handleOpen = () => {
