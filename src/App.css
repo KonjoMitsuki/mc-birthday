@@ -1,5 +1,5 @@
 /* フォント読み込み */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 
 :root {
   --mc-gray: #C6C6C6;
@@ -9,7 +9,7 @@
 
 body {
   margin: 0;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'DotGothic16', sans-serif;
   background-color: #181818;
   color: white;
   overflow: hidden;
@@ -82,7 +82,7 @@ body {
   border: 3px solid;
   border-color: #fff var(--mc-dark) var(--mc-dark) #fff;
   background-color: var(--mc-gray);
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'DotGothic16', sans-serif;
   font-size: 0.7rem;
   cursor: pointer;
   text-decoration: none;
