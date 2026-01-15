@@ -51,7 +51,7 @@ function App() {
           </button>
 
           <a href="https://www.minecraft.net/ja-jp/redeem" target="_blank" rel="noreferrer" className="mc-button mc-button-green">
-            REDEEM PAGE
+            引き換え場所はこちら！！
           </a>
         </div>
       )}
