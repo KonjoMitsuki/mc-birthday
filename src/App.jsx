@@ -8,7 +8,7 @@ function App() {
 
   // ★情報を変更してください
   const FRIEND_NAME = "SO";
-  const MINECRAFT_CODE = "ABCD-EFGH-IJKL-MNOP";
+  const MINECRAFT_CODE = "DYYQK-P4RDP-PY6WJ-YGYXT-QDTHZ";
 
   const handleOpen = () => {
     if (isOpened) return;
